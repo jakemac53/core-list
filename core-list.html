@@ -926,7 +926,7 @@ the following abstract API:
       } else {
         // Incremental movement: adjust index by flipping items
         var base = this._aboveSize + this._physicalOffset;
-        var margin = 0.3 * Math.max((this._physicalSize - this._targetSize, this._physicalSize));
+        var margin = 0.3 * Math.max(this._physicalSize - this._targetSize, this._physicalSize);
         this._upperBound = base + margin;
         this._lowerBound = base + this._physicalSize - this._targetSize - margin;
         var flipBound = this._dir > 0 ? this._upperBound : this._lowerBound;
